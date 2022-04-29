@@ -1,0 +1,5 @@
+package com.dream.productservice.dto;
+
+public class Products {
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.dream.productservice.dto.Products.java&apos; to &apos;products.java&apos;&#x0D;&#x0A;- Original project: &apos;product-service&apos;&#x0D;&#x0A;- Original element: &apos;com.dream.productservice.dto.Products.java&apos;&#x0D;&#x0A;- Renamed element: &apos;com.dream.productservice.dto.products.java&apos;" description="Rename compilation unit &apos;Products.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src\/main\/java=/gradle_scope=/main=/=/gradle_used_by_scope=/main,test=/&lt;com.dream.productservice.dto{Products.java" name="products.java" references="false" stamp="1650959660843" version="1.0"/>
+</session>

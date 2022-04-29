@@ -1,0 +1,9 @@
+package com.dream.productservice.repository;
+
+public interface ProductRepository JpaRepository<Product, Long>{
+	
+	@Modifying
+	@Transactional
+	@Query(value="UPDATE scottDB.product m SET m.name=:#{#product.name}, m.memo=:#{#product.memo}, m.price=:#{#product.price} WHERE m.id = :id", nativeQuery=true)
+	void update(@Param("product") Product product, @Param("id") Long id);
+}

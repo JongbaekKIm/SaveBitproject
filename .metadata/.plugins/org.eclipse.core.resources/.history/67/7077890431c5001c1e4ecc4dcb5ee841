@@ -1,0 +1,15 @@
+package com.dream.productservice.repository;
+
+import org.apache.commons.math.stat.descriptive.summary.Product;
+import org.springframework.data.jpa.repository.Modifying;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
+import org.springframework.transaction.annotation.Transactional;
+
+public interface ProductRepository extendJpaRepository<ProductDto, Long>{
+	
+	@Modifying
+	@Transactional
+	@Query(value="UPDATE dream.products m SET m.name=:#{#product.name}, m.memo=:#{#product.memo}, m.price=:#{#product.price} WHERE m.id = :id", nativeQuery=true)
+	void update(@Param("product") Product product, @Param("id") Long id);
+}
